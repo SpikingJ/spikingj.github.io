@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://spikingj.github.io/al-folio/sitemap.xml
+Sitemap: https://spikingj.github.io//sitemap.xml
