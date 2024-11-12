@@ -19,6 +19,7 @@ Prior to that, I obtained my PhD degree at King's College London, working with P
 
 ### Academic Activities
 - Technical Program Committee (TPC) Member, IEEE DySPAN, 2025
-- TPC Member,  IEEE Vehicular Technology Conference (VTC), 2024 Spring
 - TPC Member,  IEEE/CIC International Conference on Communications in China (IEEE ICCC), 2024
+- TPC Member,  IEEE Vehicular Technology Conference (VTC), 2024 Spring
+
 
