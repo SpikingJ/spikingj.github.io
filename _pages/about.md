@@ -17,5 +17,5 @@ I am currently a research aasociate with King’s Communications, Learning and I
 
 Prior to that, I obtained my PhD degree at King's College London, working with Prof. Osvaldo Simeone, on the topics of neuromorphic computing and wireless communications. 
 
-### Academic Services
+### Academic Activities
 - 
