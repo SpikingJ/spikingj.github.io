@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Email jiechen.chen@kcl.ac.uk
+subtitle: jiechen.chen@kcl.ac.uk
 
 profile:
   align: right
