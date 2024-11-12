@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: 
+description: All publications can be found in my [Google Scholar](https://scholar.google.co.uk/citations?hl=en&user=wZ2GlecAAAAJ&view_op=list_works&sortby=pubdate).
 nav: true
 nav_order: 2
 ---
