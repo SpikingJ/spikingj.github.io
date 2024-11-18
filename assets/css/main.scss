@@ -1,88 +1,53 @@
-/* General Body Styling */
+@charset "utf-8";
+
+// General Styling
 body {
-    font-family: Arial, sans-serif; /* Set font to Arial for consistency */
-    margin: 0;
-    padding: 0;
-    font-size: 16px; /* Restore default font size */
-}
-
-/* Navbar Styling */
-.navbar {
     font-family: Arial, sans-serif;
-    padding: 15px 0;
-    margin-bottom: 0;
-}
-
-.navbar .navbar-brand {
-    font-weight: bold;
-    font-size: 1.25rem;
-}
-
-.nav {
-    list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    gap: 20px;
+    font-size: 16px;
 }
 
-.nav .nav-link {
-    color: #555;
-    text-decoration: none;
-    padding: 5px 10px;
-    font-size: 14px; /* Set proper tab size */
-}
-
-.nav .nav-link:hover {
-    color: #000;
-    text-decoration: underline;
-}
-
-/* Container Styling */
-.about-page .container {
-    max-width: 1100px; /* Restrict width */
-    margin: 0 auto; /* Center horizontally */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
     padding: 0 15px;
-    display: flex; /* Use flex layout for alignment */
-    gap: 20px; /* Add spacing between columns */
 }
 
-/* Left Column Styling */
-.about-page .col-md-4 {
-    flex: 0 0 300px; /* Fix width for the left column */
-    text-align: center;
+.navbar {
+    margin-bottom: 10px;
+    padding: 10px 0;
 }
 
 /* Profile Picture Styling */
 .about-page .profile-pic {
-    max-width: 150px; /* Set consistent picture size */
-    border-radius: 50%; /* Round the picture */
-    margin: 20px auto; /* Add spacing and center */
+    max-width: 150px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
 }
 
-/* Right Column Styling */
+/* Column Layout */
+.about-page .col-md-4 {
+    flex: 0 0 300px;
+    text-align: center;
+    padding-right: 20px;
+}
+
 .about-page .col-md-8 {
     flex: 1;
-    padding: 0 20px;
+    padding-left: 20px;
+}
+
+/* Row Alignment */
+.about-page .row {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 0;
 }
 
 /* Header Styling */
 .about-page .post-header h2 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 1.8rem; /* Adjust header font size */
-    font-weight: bold;
-}
-
-/* Paragraphs */
-.about-page p {
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 14px;
+    margin: 0;
+    padding: 0;
 }
