@@ -1,8 +1,6 @@
 @charset "utf-8";
 
-// Dimensions
-$max-content-width: {{ site.max_width }};
-
+// Import variables and layouts
 @import
   "variables",
   "themes",
@@ -23,65 +21,78 @@ $max-content-width: {{ site.max_width }};
 
 // General Container Styling
 .container {
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 900px; /* Restrict the width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add spacing around content */
 }
 
 // Row Styling
 .row {
     display: flex;
-    align-items: flex-start;
-    gap: 30px;
+    align-items: flex-start; /* Align columns at the top */
+    gap: 20px; /* Space between columns */
 }
 
-// Left Column
+// Left Column Styling
 .col-md-4 {
     flex: 1;
     text-align: center;
     padding-right: 15px;
 }
 
-// Profile Picture
-.profile img, .profile-pic {
-    max-width: 120px;
-    max-height: 120px;
-    margin: 0 auto 10px;
-    border-radius: 50%;
-}
-
-// Right Column
+// Right Column Styling
 .col-md-8 {
     flex: 2;
     padding-left: 15px;
 }
 
-// Body
+// Profile Picture Styling
+.profile img, .profile-pic {
+    max-width: 120px; /* Restrict picture size */
+    height: auto;
+    margin: 0 auto 10px;
+    border-radius: 50%; /* Make the image circular */
+}
+
+// Body Styling
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif; /* Use a clean, readable font */
     margin: 0;
     padding: 0;
 }
 
-// Navbar
-.navbar {
-    padding: 10px 20px;
-    background-color: #fff;
-}
-.nav .nav-link {
-    font-size: 1rem;
-    color: #555;
-    padding: 5px 10px;
+// Heading Styling
+h1, h2, h3 {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
 }
 
-// About Page
+// Navbar Styling
+.navbar {
+    padding: 10px 20px;
+    background-color: #fff; /* Light background */
+    border-bottom: 1px solid #ddd; /* Add subtle border */
+}
+
+.navbar .nav-link {
+    font-size: 1rem;
+    color: #555;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+// About Page Adjustments
 .about-page {
-    padding-top: 15px;
+    padding-top: 20px;
 }
+
 .about-page .post-header h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem; /* Moderate heading size */
     margin-bottom: 15px;
+    color: #333;
 }
+
 .about-page .post-content p {
     line-height: 1.6;
     margin-bottom: 15px;
