@@ -23,9 +23,9 @@ $max-content-width: {{ site.max_width }};
 
 // Container Styling
 .container {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px;
 }
 
 // Row Styling
@@ -65,6 +65,12 @@ $max-content-width: {{ site.max_width }};
     font-weight: bold;
 }
 
+.profile-pic {
+    max-width: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+}
+
 // Body Styling
 body {
     font-family: 'Roboto', sans-serif;
@@ -83,9 +89,9 @@ h1, h2, h3 {
 .navbar {
     font-family: 'Roboto', sans-serif;
     padding: 10px 0;
-    margin-bottom: 0; /* Removes extra margin */
+    background-color: #f8f9fa; /* Light gray background */
+    border-bottom: 1px solid #ddd;
 }
-
 // Navbar Links
 .nav .nav-link {
     color: #555;
@@ -93,15 +99,21 @@ h1, h2, h3 {
     padding: 5px 10px;
 }
 
-.nav .nav-link:hover {
-    color: #000;
-    text-decoration: underline;
+.navbar .nav-link {
+    font-size: 1rem;
+    color: #555;
+    text-decoration: none;
+    margin-right: 20px;
 }
 
-// About Page: General Styling
+
+/* Align About Page Content */
 .about-page {
-    padding-top: 10px; /* Adjusts spacing at the top */
-    margin-top: 0; /* Prevents excessive top margin */
+    padding-top: 30px;
+}
+
+.about-page .row {
+    align-items: center;
 }
 
 .about-page .container {
@@ -111,13 +123,18 @@ h1, h2, h3 {
 
 // About Page: Heading Styling
 .about-page .post-header h2 {
-    margin-top: 0; /* Removes default margin */
-    margin-bottom: 10px;
-    font-size: 1.8rem; /* Adjust heading size */
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 // About Page: Paragraph Styling
 .about-page p {
     line-height: 1.6; /* Increases readability */
     margin-bottom: 15px; /* Adds consistent spacing */
+}
+
+#clustrmaps-widget {
+    margin-top: 20px;
+    text-align: center;
 }
