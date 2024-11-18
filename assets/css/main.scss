@@ -60,12 +60,9 @@ $max-content-width: {{ site.max_width }};
 
 body {
     font-family: 'Roboto', sans-serif;
-}
-
-/* Reduce spacing in header or body */
-body {
     padding-top: 0; /* Remove default top padding, if any */
 }
+
 
 h1, h2, h3 {
     font-weight: 700;
@@ -103,8 +100,8 @@ h1, h2, h3 {
 /* Profile Picture */
 .about-page .profile-pic {
     max-width: 150px; /* Small picture size */
-    margin-top: 1px; /* Add some space from the top */
-    margin-bottom: 2px; /* Add a small gap below the picture */
+    margin-top: 0; /* Add some space from the top */
+    margin-bottom: 0; /* Add a small gap below the picture */
     padding-top: 0;
 }
 
@@ -126,5 +123,11 @@ h1, h2, h3 {
 /* Bring "About Me" Closer to Top */
 .about-page .container {
     margin-top: 20px; /* Reduce the top margin to bring content up */
+}
+
+/* Ensure About Page header aligns correctly */
+.about-page .post-header h2 {
+    margin-top: 0; /* Remove any top margin from the heading */
+    padding-top: 0; /* Ensure the heading is closer */
 }
 
