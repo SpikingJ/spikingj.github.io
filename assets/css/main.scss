@@ -57,3 +57,11 @@ $max-content-width: {{ site.max_width }};
     margin-top: 15px;
     font-size: 1.5rem;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
