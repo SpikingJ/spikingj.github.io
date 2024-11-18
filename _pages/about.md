@@ -6,7 +6,7 @@ subtitle: jiechen.chen@kcl.ac.uk
 
 profile:
   align: left
-  image: prof_pic.jpg
+  image: JCC.JPG
   image_circular: true # crops the image to make it circular
 
 
