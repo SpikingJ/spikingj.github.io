@@ -3,11 +3,11 @@ layout: default
 ---
 <div class="about-page">
     <div class="container mt-5">
-        <div class="row align-items-center">
+        <div class="row align-items-start">
             <!-- Left Column -->
-            <div class="col-md-4 text-center">
-                <img src="{{ site.baseurl }}/assets/img/prof_pic.jpg" alt="Profile Picture" class="img-fluid rounded-circle profile-pic">
-                <h2>{{ site.first_name }} {{ site.last_name }}</h2>
+            <div class="col-md-4 text-center d-flex flex-column align-items-center">
+                <img src="{{ site.baseurl }}/assets/images/prof_pic.jpg" alt="Profile Picture" class="img-fluid rounded-circle profile-pic">
+                <h2 class="mt-3">{{ site.first_name }} {{ site.last_name }}</h2>
                 <p>{{ page.subtitle }}</p>
                 <p>
                     <i class="fas fa-map-marker-alt"></i> London, UK <br>
@@ -17,7 +17,7 @@ layout: default
                 </p>
             </div>
 
-            <!-- Right Column: About Me and Content -->
+            <!-- Right Column -->
             <div class="col-md-8">
                 <article>
                     <header class="post-header">
@@ -33,11 +33,10 @@ layout: default
                     {% include selected_papers.liquid %}
                     {% endif %}
 
-                    <p><center>
-                            <div id="clustrmaps-widget" style="width:100px">
-                            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=6S1_klH-6jQahJbFleG831JfFePX1Gl-D1JUcSLZYOE"></script>
-                    </div> 
-
+                    <p><center>
+                            <div id="clustrmaps-widget" style="width:100px">
+                            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=6S1_klH-6jQahJbFleG831JfFePX1Gl-D1JUcSLZYOE"></script>
+                    </div>
                 </article>
             </div>
         </div>
