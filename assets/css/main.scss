@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+// Dimensions
+$max-content-width: {{ site.max_width }};
+
+@import
+  "variables",
+  "themes",
+  "layout",
+  "base",
+  "distill",
+  "cv",
+  "tabs",
+  "typograms",
+  "font-awesome/fontawesome",
+  "font-awesome/brands",
+  "font-awesome/solid",
+  "font-awesome/regular",
+  "tabler-icons/tabler-icons.scss",
+  "tabler-icons/tabler-icons-filled.scss",
+  "tabler-icons/tabler-icons-outline.scss"
+;
+
+// Container Styling
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+// Row Styling
+.row {
+    display: flex;
+    align-items: flex-start; /* Aligns content to the top */
+    gap: 40px; /* Adds space between columns */
+    margin-top: 0; /* Removes default margin */
+}
+
+// Column: Left Profile Section
+.col-md-4 {
+    flex: 1;
+    max-width: 300px; /* Restrict column width */
+    padding-right: 20px;
+    text-align: center;
+}
+
+// Column: Right Content Section
+.col-md-8 {
+    flex: 2;
+    padding-left: 20px;
+}
+
+// Profile Picture Styling
+.profile img {
+    max-width: 100%; /* Ensures image is responsive */
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 15px;
+    max-height: 150px; /* Restrict picture size */
+}
+
+// Profile Name Styling
+.profile h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+// Body Styling
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0; /* Removes all default margins */
+    padding: 0; /* Removes all default paddings */
+}
+
+// Heading Styling
+h1, h2, h3 {
+    font-weight: 700;
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+// Navbar Styling
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 0;
+    margin-bottom: 0; /* Removes extra margin */
+}
+
+// Navbar Links
+.nav .nav-link {
+    color: #555;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav .nav-link:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+// About Page: General Styling
+.about-page {
+    padding-top: 10px; /* Adjusts spacing at the top */
+    margin-top: 0; /* Prevents excessive top margin */
+}
+
+.about-page .container {
+    max-width: 1000px; /* Restrict the page width */
+    padding: 0 15px;
+}
+
+// About Page: Heading Styling
+.about-page .post-header h2 {
+    margin-top: 0; /* Removes default margin */
+    margin-bottom: 10px;
+    font-size: 1.8rem; /* Adjust heading size */
+}
+
+// About Page: Paragraph Styling
+.about-page p {
+    line-height: 1.6; /* Increases readability */
+    margin-bottom: 15px; /* Adds consistent spacing */
+}
