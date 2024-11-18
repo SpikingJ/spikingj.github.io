@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="about-page">
     <div class="container mt-5">
-        <div class="row">
+        <div class="row align-items-start">
             <!-- Left Column -->
             <div class="col-md-4 text-center">
                 <img src="{{ site.baseurl }}/assets/img/JCC.JPG" alt="Profile Picture" class="img-fluid rounded-circle profile-pic">
@@ -12,8 +12,8 @@ layout: default
                 <p>
                     <i class="fas fa-map-marker-alt"></i> London, UK <br>
                     <i class="fas fa-briefcase"></i> King's College London <br>
-                    <i class="fas fa-graduation-cap"></i> 
-                    <a href="https://scholar.google.co.uk/citations?hl=en&user=wZ2GlecAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a>
+                    <i class="fas fa-graduation-cap"></i>
+                    <a href="https://scholar.google.com">Google Scholar</a>
                 </p>
             </div>
 
@@ -26,15 +26,11 @@ layout: default
                     <div class="post-content">
                         {{ content }}
                     </div>
-
+                    
                     {% if page.selected_papers %}
                     <h2>Selected Publications</h2>
                     {% include selected_papers.liquid %}
                     {% endif %}
-
-                    <div id="clustrmaps-widget" style="width:100px; text-align:center;">
-                        <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=6S1_klH-6jQahJbFleG831JfFePX1Gl-D1JUcSLZYOE"></script>
-                    </div>
                 </article>
             </div>
         </div>
