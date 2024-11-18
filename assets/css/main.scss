@@ -62,6 +62,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Reduce spacing in header or body */
+body {
+    padding-top: 0; /* Remove default top padding, if any */
+}
+
 h1, h2, h3 {
     font-weight: 700;
 }
@@ -98,8 +103,9 @@ h1, h2, h3 {
 /* Profile Picture */
 .about-page .profile-pic {
     max-width: 150px; /* Small picture size */
-    margin-top: 20px; /* Add some space from the top */
-    margin-bottom: 10px; /* Add a small gap below the picture */
+    margin-top: 1px; /* Add some space from the top */
+    margin-bottom: 2px; /* Add a small gap below the picture */
+    padding-top: 0;
 }
 
 /* Adjust Row Alignment */
