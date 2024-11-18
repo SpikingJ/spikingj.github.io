@@ -14,7 +14,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 ---
 
 ## About Me
-I am currently a research aasociate with King’s Communications, Learning and Information Processing (KCLIP) lab within the Centre for Intelligent Information Processing Systems (CIIPS) at the Department of Engineering, King’s College London. I am working with Prof. [Osvaldo Simeone](https://scholar.google.com/citations?user=m1xeKH4AAAAJ&hl=en), Prof. [Bipin Rajendran](https://scholar.google.com/citations?hl=en&user=QDEeC8EAAAAJ), and Dr. [Dengyu Wu](https://scholar.google.com/citations?hl=en&user=-Ji_VmkAAAAJ), focusing on neuromorphic wireless communications.
+I am currently a research aasociate with King’s Communications, Learning and Information Processing ([KCLIP](https://blogs.kcl.ac.uk/kclip/)) lab within the Centre for Intelligent Information Processing Systems ([CIIPS](https://www.kcl.ac.uk/research/centre-for-intelligent-information-processing-systems)) at the Department of Engineering, King’s College London. I am working with Prof. [Osvaldo Simeone](https://scholar.google.com/citations?user=m1xeKH4AAAAJ&hl=en), Prof. [Bipin Rajendran](https://scholar.google.com/citations?hl=en&user=QDEeC8EAAAAJ), and Dr. [Dengyu Wu](https://scholar.google.com/citations?hl=en&user=-Ji_VmkAAAAJ), focusing on neuromorphic wireless communications.
 
 Prior to that, I obtained my PhD degree at King's College London, supervised by Prof. Osvaldo Simeone. 
 
