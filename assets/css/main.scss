@@ -23,3 +23,37 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.col-md-4 {
+    flex: 1;
+    max-width: 300px;
+    padding-right: 20px;
+}
+
+.col-md-8 {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.profile img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile h2 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
