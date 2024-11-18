@@ -1,11 +1,6 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
 @charset "utf-8";
 
-// Dimensions
-$max-content-width: {{ site.max_width }};
-
+// Import dependencies
 @import
   "variables",
   "themes",
@@ -24,45 +19,51 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-outline.scss"
 ;
 
+// General Container Styling
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 0 15px; /* Add padding only on the sides */
 }
 
-.row {
-    display: flex;
-    align-items: flex-start;
-    margin-top: 20px;
+// About Page Styling
+.about-page {
+    margin-top: 0; /* Bring content closer to the top */
+    padding-top: 0; /* Remove top padding */
+
+    .row {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px; /* Add spacing between columns */
+    }
+
+    .col-md-4 {
+        flex: 1;
+        max-width: 300px;
+        padding-right: 20px;
+    }
+
+    .col-md-8 {
+        flex: 2;
+        padding-left: 20px;
+    }
+
+    .profile-pic {
+        max-width: 150px;
+        border-radius: 50%;
+        margin: 0 auto 15px; /* Center and add bottom spacing */
+    }
+
+    .post-header h2 {
+        margin: 0;
+        padding: 0;
+    }
 }
 
-.col-md-4 {
-    flex: 1;
-    max-width: 300px;
-    padding-right: 20px;
-}
-
-.col-md-8 {
-    flex: 2;
-    padding-left: 20px;
-}
-
-.profile img {
-    max-width: 100%;
-    border-radius: 50%;
-    margin-bottom: 15px;
-}
-
-.profile h2 {
-    margin-top: 15px;
-    font-size: 1.5rem;
-}
-
+// Global Styles
 body {
     font-family: 'Roboto', sans-serif;
-    padding-top: 0; /* Remove default top padding, if any */
 }
-
 
 h1, h2, h3 {
     font-weight: 700;
@@ -96,38 +97,3 @@ h1, h2, h3 {
     color: #000;
     text-decoration: underline;
 }
-
-/* Profile Picture */
-.about-page .profile-pic {
-    max-width: 150px; /* Small picture size */
-    margin-top: 0; /* Add some space from the top */
-    margin-bottom: 0; /* Add a small gap below the picture */
-    padding-top: 0;
-}
-
-/* Adjust Row Alignment */
-.about-page .row {
-    gap: 40px; /* Add space between columns */
-}
-
-/* Left Column Styling */
-.about-page .col-md-4 {
-    padding-right: 20px; /* Spacing to avoid overlap */
-}
-
-/* Right Column Styling */
-.about-page .col-md-8 {
-    padding-left: 20px;
-}
-
-/* Bring "About Me" Closer to Top */
-.about-page .container {
-    margin-top: 20px; /* Reduce the top margin to bring content up */
-}
-
-/* Ensure About Page header aligns correctly */
-.about-page .post-header h2 {
-    margin-top: 0; /* Remove any top margin from the heading */
-    padding-top: 0; /* Ensure the heading is closer */
-}
-
