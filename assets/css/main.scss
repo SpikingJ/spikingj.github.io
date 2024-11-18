@@ -1,6 +1,11 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
 @charset "utf-8";
 
-// Import dependencies
+// Dimensions
+$max-content-width: {{ site.max_width }};
+
 @import
   "variables",
   "themes",
@@ -19,51 +24,45 @@
   "tabler-icons/tabler-icons-outline.scss"
 ;
 
-// General Container Styling
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 15px; /* Add padding only on the sides */
+    padding: 10px;
 }
 
-// About Page Styling
-.about-page {
-    margin-top: 0; /* Bring content closer to the top */
-    padding-top: 0; /* Remove top padding */
-
-    .row {
-        display: flex;
-        align-items: flex-start;
-        gap: 40px; /* Add spacing between columns */
-    }
-
-    .col-md-4 {
-        flex: 1;
-        max-width: 300px;
-        padding-right: 20px;
-    }
-
-    .col-md-8 {
-        flex: 2;
-        padding-left: 20px;
-    }
-
-    .profile-pic {
-        max-width: 150px;
-        border-radius: 50%;
-        margin: 0 auto 15px; /* Center and add bottom spacing */
-    }
-
-    .post-header h2 {
-        margin: 0;
-        padding: 0;
-    }
+.row {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
 }
 
-// Global Styles
+.col-md-4 {
+    flex: 1;
+    max-width: 300px;
+    padding-right: 20px;
+}
+
+.col-md-8 {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.profile img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile h2 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+    padding-top: 0; /* Remove default top padding, if any */
 }
+
 
 h1, h2, h3 {
     font-weight: 700;
@@ -96,4 +95,48 @@ h1, h2, h3 {
 .nav .nav-link:hover {
     color: #000;
     text-decoration: underline;
+}
+
+/* General Container Styling */
+.about-page .container {
+    max-width: 1000px; /* Restrict width to a readable size */
+    margin: 0 auto; /* Center container */
+    padding: 0 15px; /* Add padding only on the sides */
+}
+
+/* Bring Content Closer to the Top */
+.about-page {
+    margin-top: 0; /* Remove any margin from the about-page */
+    padding-top: 0; /* Remove any top padding */
+}
+
+/* Ensure Row Doesn't Add Extra Margin */
+.about-page .row {
+    display: flex;
+    align-items: flex-start; /* Align to the top */
+    margin-top: 0; /* Remove row's top margin */
+    gap: 40px; /* Maintain column spacing */
+}
+
+/* Ensure Heading Starts at the Top */
+.about-page .post-header h2 {
+    margin: 0; /* Remove any margins */
+    padding: 0; /* Remove padding */
+}
+
+/* Profile Picture Specific Styling */
+.about-page .profile-pic {
+    max-width: 150px; /* Set picture size */
+    margin: 0; /* Remove extra margins */
+}
+
+/* Remove Any Body Padding */
+body {
+    padding: 0; /* Remove all body padding */
+    margin: 0; /* Remove all body margins */
+}
+
+/* Navbar Tweaks to Maintain Proper Alignment */
+.navbar {
+    margin-bottom: 10px; /* Adjust navbar spacing */
 }
