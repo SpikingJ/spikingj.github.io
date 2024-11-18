@@ -3,10 +3,10 @@ layout: default
 ---
 <div class="about-page">
     <div class="container mt-5">
-        <div class="row">
+        <div class="row align-items-center">
             <!-- Left Column -->
             <div class="col-md-4 text-center">
-                <img src="{{ site.baseurl }}/assets/img/prof_pic.jpg" alt="Profile Picture" class="img-fluid rounded-circle">
+                <img src="{{ site.baseurl }}/assets/img/prof_pic.jpg" alt="Profile Picture" class="img-fluid rounded-circle profile-pic">
                 <h2>{{ site.first_name }} {{ site.last_name }}</h2>
                 <p>{{ page.subtitle }}</p>
                 <p>
@@ -27,25 +27,23 @@ layout: default
                         {{ content }}
                     </div>
 
-                    <!-- News Section -->
-                    {% if page.news and site.announcements.enabled %}
-                    <h2>News</h2>
-                    {% include news.liquid limit=true %}
-                    {% endif %}
+                    <h2>Academic Activities</h2>
+                    <ul>
+                        <li>Technical Program Committee (TPC) Member, IEEE DySPAN, 2025</li>
+                        <li>TPC Member, IEEE/CIC International Conference on Communications in China (ICCC), 2024</li>
+                        <li>TPC Member, IEEE Vehicular Technology Conference (VTC), 2024 Spring</li>
+                    </ul>
 
-                    <!-- Selected Publications Section -->
                     {% if page.selected_papers %}
                     <h2>Selected Publications</h2>
                     {% include selected_papers.liquid %}
                     {% endif %}
 
+                    <div id="clustrmaps-widget" style="text-align: center; margin-top: 20px;">
+                        <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=6S1_klH-6jQahJbFleG831JfFePX1Gl-D1JUcSLZYOE"></script>
+                    </div>
                 </article>
-
-                <!-- Clustrmaps Widget (after all sections) -->
-                <div id="clustrmaps-widget" style="text-align: center; margin-top: 20px;">
-                    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=6S1_klH-6jQahJbFleG831JfFePX1Gl-D1JUcSLZYOE"></script>
-                </div>
             </div>
-        </div> <!-- Close Row -->
-    </div> <!-- Close Container -->
-</div> <!-- Close About Page -->
+        </div>
+    </div>
+</div>
