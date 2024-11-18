@@ -27,16 +27,13 @@ layout: default
                         {{ content }}
                     </div>
 
-
                     {% if page.selected_papers %}
                     <h2>Selected Publications</h2>
                     {% include selected_papers.liquid %}
+                    <div id="clustrmaps-widget" style="width:100px; text-align:center;">
+                        <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=6S1_klH-6jQahJbFleG831JfFePX1Gl-D1JUcSLZYOE"></script>
+                    </div>
                     {% endif %}
-
-                    <p><center>
-                            <div id="clustrmaps-widget" style="width:100px">
-                            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=6S1_klH-6jQahJbFleG831JfFePX1Gl-D1JUcSLZYOE"></script>
-                    </div>
                 </article>
             </div>
         </div>
