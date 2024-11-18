@@ -17,7 +17,7 @@ I am currently a research aasociate with King’s Communications, Learning and I
 
 Prior to that, I obtained my PhD degree at King's College London, supervised by Prof. Osvaldo Simeone. 
 
-My research interests focus on neuromorphic computing and its applications in wireless communications. If it aligns with your interests, please feel free to reach out.
+My research interests focus on neuromorphic computing and its applications in wireless communications. If you are interested in my research, please feel free to reach out.
 
 
 ### Academic Activities
