@@ -95,4 +95,22 @@ h1, h2, h3 {
     text-decoration: underline;
 }
 
+.about-page .profile-pic {
+    max-width: 150px; /* Resize the profile picture */
+    margin-bottom: 20px; /* Add space below the picture */
+}
+
+.about-page .row {
+    gap: 30px; /* Add spacing between the two columns */
+}
+
+.about-page .col-md-4 {
+    text-align: center;
+    padding-right: 20px; /* Ensure some padding on the right */
+}
+
+.about-page .col-md-8 {
+    padding-left: 20px; /* Ensure some padding on the left */
+}
+
 
