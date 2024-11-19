@@ -43,8 +43,8 @@
 }
 
 .profile-pic {
-    max-width: 30px; /* Reduce size to 100px */
-    max-height: 30px; /* Ensure it doesn't exceed 100px in height */
+    max-width: 30px !important; /* Reduce size to 100px */
+    max-height: 30px !important; /* Ensure it doesn't exceed 100px in height */
     margin: 0 auto 15px; /* Keep it centered and spaced */
     border-radius: 50%; /* Circular shape */
     display: block; /* Align properly */
