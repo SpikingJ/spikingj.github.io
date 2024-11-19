@@ -95,3 +95,12 @@ h2 {
         max-width: 100px;
     }
 }
+
+.about-page ul {
+    list-style-type: none; /* Removes numbers or bullets from lists */
+    padding-left: 0; /* Aligns the list items to the left */
+}
+
+.about-page ul li {
+    margin-bottom: 15px; /* Adds space between items */
+}
