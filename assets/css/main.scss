@@ -41,12 +41,13 @@
 }
 
 .profile-pic {
-    width: 120px;
-    height: 120px;
+    width: 100px; /* Adjust the width */
+    height: 100px; /* Ensure it's proportional */
     object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 15px;
+    border-radius: 50%; /* Keep it circular */
+    margin-bottom: 10px;
 }
+
 
 // Right Column Styling
 .col-md-9 {
