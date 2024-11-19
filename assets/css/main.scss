@@ -27,33 +27,40 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
     gap: 30px;
+    align-items: center; /* Align items vertically */
 }
 
 .col-md-4 {
-    flex: 0 0 300px;
-    max-width: 300px;
+    flex: 0 0 200px; /* Fix width for the picture */
+    max-width: 200px;
     text-align: center;
 }
 
 .col-md-8 {
     flex: 1;
-    max-width: calc(100% - 320px);
+    max-width: calc(100% - 220px);
 }
 
 .profile-pic {
-    max-width: 30px !important; /* Reduce size to 100px */
-    max-height: 30px !important; /* Ensure it doesn't exceed 100px in height */
-    margin: 0 auto 15px; /* Keep it centered and spaced */
+    max-width: 150px; /* Adjust picture size */
+    max-height: 150px;
     border-radius: 50%; /* Circular shape */
-    display: block; /* Align properly */
+    margin: 0 auto 20px; /* Center align and spacing */
 }
 
-
 h2 {
-    font-size: 1.75rem;
-    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222; /* Darker header color */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; /* Base font size */
+    color: #333; /* Text color */
+    line-height: 1.6; /* Improved readability */
 }
 
 .post-header h2 {
@@ -61,23 +68,25 @@ h2 {
     padding-top: 0;
 }
 
-.about-page {
-    padding-top: 10px;
+.about-page p {
+    margin-bottom: 15px;
+    color: #555; /* Slightly lighter text color */
 }
 
 .navbar {
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 14px;
     padding: 10px 0;
+    color: #555;
 }
 
 .nav-link {
-    color: #555;
+    color: #007bff; /* Light blue for links */
     text-decoration: none;
+    margin-right: 15px;
 }
 
 .nav-link:hover {
-    color: #000;
     text-decoration: underline;
 }
 
@@ -85,23 +94,27 @@ h2 {
 @media (max-width: 768px) {
     .row {
         flex-direction: column;
+        align-items: center; /* Center align content */
     }
 
     .col-md-4,
     .col-md-8 {
         max-width: 100%;
+        text-align: center; /* Align text for mobile */
     }
 
     .profile-pic {
-        max-width: 100px;
+        max-width: 100px; /* Smaller picture for mobile */
     }
 }
 
 .about-page ul {
-    list-style-type: none; /* Removes numbers or bullets from lists */
-    padding-left: 0; /* Aligns the list items to the left */
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
 }
 
 .about-page ul li {
-    margin-bottom: 15px; /* Adds space between items */
+    margin-bottom: 10px;
+    font-size: 14px; /* Smaller font size for details */
 }
