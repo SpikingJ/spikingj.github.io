@@ -48,10 +48,13 @@
 
 // Profile Picture Styling
 .profile img, .profile-pic {
-    max-width: 120px; /* Restrict picture size */
-    height: auto;
-    margin: 0 auto 10px;
-    border-radius: 50%; /* Make the image circular */
+    max-width: 120px; /* Set maximum width */
+    max-height: 120px; /* Set maximum height */
+    width: 100%; /* Ensure responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto 10px; /* Center the image with spacing below */
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a soft shadow */
 }
 
 // Body Styling
