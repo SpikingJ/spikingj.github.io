@@ -19,89 +19,89 @@
   "tabler-icons/tabler-icons-outline.scss"
 ;
 
-// General Container Styling
+// General Layout
 .container {
-    max-width: 900px; /* Restrict the width */
-    margin: 0 auto; /* Center the container */
-    padding: 20px; /* Add spacing around content */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-// Row Styling
 .row {
     display: flex;
-    align-items: flex-start; /* Align columns at the top */
-    gap: 20px; /* Space between columns */
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 30px;
 }
 
 // Left Column Styling
-.col-md-4 {
+.col-md-3 {
+    max-width: 240px;
     flex: 1;
     text-align: center;
-    padding-right: 15px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
 }
 
 // Right Column Styling
-.col-md-8 {
-    flex: 2;
-    padding-left: 15px;
+.col-md-9 {
+    flex: 3;
+    padding-left: 20px;
 }
 
-// Profile Picture Styling
-.profile img, .profile-pic {
-    max-width: 120px; /* Set maximum width */
-    max-height: 120px; /* Set maximum height */
-    width: 100%; /* Ensure responsiveness */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 auto 10px; /* Center the image with spacing below */
-    border-radius: 50%; /* Make it circular */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a soft shadow */
-}
-
-// Body Styling
+// General Text and Typography
 body {
-    font-family: 'Arial', sans-serif; /* Use a clean, readable font */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-// Heading Styling
-h1, h2, h3 {
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-}
-
-// Navbar Styling
-.navbar {
-    padding: 10px 20px;
-    background-color: #fff; /* Light background */
-    border-bottom: 1px solid #ddd; /* Add subtle border */
-}
-
-.navbar .nav-link {
-    font-size: 1rem;
-    color: #555;
-    margin-right: 15px;
-    text-decoration: none;
-}
-
-// About Page Adjustments
-.about-page {
-    padding-top: 20px;
-}
-
-.about-page .post-header h2 {
-    font-size: 1.5rem; /* Moderate heading size */
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.about-page .post-content p {
     line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+
+p {
     margin-bottom: 15px;
 }
 
-// ClustrMaps Widget
+// Navbar
+.navbar {
+    font-size: 1rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav .nav-link {
+    color: #555;
+    padding: 8px 15px;
+}
+
+.nav .nav-link:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+// About Page Styling
+.about-page {
+    padding-top: 15px;
+}
+
+.post-header h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.post-content {
+    margin-bottom: 20px;
+}
+
 #clustrmaps-widget {
     margin-top: 20px;
     text-align: center;
