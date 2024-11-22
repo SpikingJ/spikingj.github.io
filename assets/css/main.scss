@@ -63,6 +63,10 @@ body {
     line-height: 1.6; /* Improved readability */
 }
 
+body {
+    overflow: hidden; /* Completely hides the scrollbar */
+}
+
 .post-header h2 {
     margin-top: 0;
     padding-top: 0;
