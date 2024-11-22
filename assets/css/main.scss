@@ -74,16 +74,18 @@ body {
 }
 
 .navbar {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    padding: 10px 0;
-    color: #555;
+    border: none; /* Remove any potential borders */
+    box-shadow: none; /* Remove any shadows */
+    background-color: transparent; /* Remove background color */
+    padding: 0; /* Adjust padding if needed */
 }
 
 .nav-link {
-    color: #007bff; /* Light blue for links */
+    color: #007bff; /* Keep the color */
     text-decoration: none;
     margin-right: 15px;
+    padding: 0; /* Remove any internal padding */
+    border: none; /* Remove borders */
 }
 
 .nav-link:hover {
@@ -117,4 +119,10 @@ body {
 .about-page ul li {
     margin-bottom: 10px;
     font-size: 14px; /* Smaller font size for details */
+}
+
+.tab {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
 }
