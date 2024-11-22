@@ -24,6 +24,15 @@
     padding: 20px;
 }
 
+.container {
+    overflow: hidden;
+    scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
