@@ -24,37 +24,30 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-outline.scss"
 ;
 
-/* Parent Row Container */
-.row {
+/* Profile Picture Section */
+.profile-section {
   display: flex;
-  align-items: flex-start; /* Align items at the top */
-  gap: 20px; /* Add spacing between the columns */
+  flex-direction: column; /* Stack the photo and name vertically */
+  align-items: center; /* Center align the content (photo and name) */
+  text-align: center; /* Center text alignment for the name and details */
 }
 
-/* Left Column: Profile Section */
-.col-md-4 {
-  flex: 0 0 auto; /* Prevent the image from resizing */
-  display: flex;
-  flex-direction: column; /* Stack content in the column */
-  align-items: center; /* Center content horizontally */
-  margin-top: 0; /* Remove any unnecessary top margin */
-}
 
-/* Right Column: About Me Text */
-.col-md-8 {
-  flex: 1 1 auto; /* Allow the text to expand and take available space */
-}
 
-/* Profile Picture */
 .profile-pic {
-  width: 120px; /* Set fixed width */
-  height: 120px; /* Match height for a perfect circle */
-  border-radius: 50%; /* Circular shape */
-  object-fit: cover; /* Ensure proper cropping within the circle */
-  margin-bottom: 10px; /* Add spacing below the picture */
+  width: 120px; /* Set smaller width */
+  height: 120px; /* Match height for a circle */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fits well in the circle */
+  margin-bottom: 10px; /* Adds space between the photo and the name */
 }
 
-/* Remove Extra Spacing from Top */
-.about-page {
-  margin-top: 0; /* Ensure no margin pushes content down */
+
+
+/* Align the profile section to the top */
+.col-md-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align to the top */
+  align-items: center; /* Center the content horizontally */
 }
