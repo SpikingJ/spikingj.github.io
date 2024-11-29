@@ -23,3 +23,22 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+/* Profile Picture Adjustment */
+.profile-pic {
+  width: 120px; /* Set smaller width */
+  height: 120px; /* Match height for a circle */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fits well in the circle */
+  float: left; /* Aligns the image to the left of the text */
+  margin-right: 20px; /* Adds space between the image and the text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow (optional) */
+}
+
+/* Responsive Adjustment for Small Screens */
+@media (max-width: 768px) {
+  .profile-pic {
+    float: none; /* Removes floating on small screens */
+    margin: 0 auto 20px; /* Centers the image and adds spacing below */
+  }
+}
