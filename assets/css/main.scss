@@ -24,21 +24,26 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-outline.scss"
 ;
 
-/* Profile Picture Adjustment */
+/* Profile Picture Section */
+.profile-section {
+  display: flex;
+  flex-direction: column; /* Stack the photo and name vertically */
+  align-items: center; /* Center align the content (photo and name) */
+  text-align: center; /* Center text alignment for the name and details */
+}
+
 .profile-pic {
   width: 120px; /* Set smaller width */
   height: 120px; /* Match height for a circle */
   border-radius: 50%; /* Makes the image circular */
   object-fit: cover; /* Ensures the image fits well in the circle */
-  float: left; /* Aligns the image to the left of the text */
-  margin-right: 20px; /* Adds space between the image and the text */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow (optional) */
+  margin-bottom: 10px; /* Adds space between the photo and the name */
 }
 
-/* Responsive Adjustment for Small Screens */
-@media (max-width: 768px) {
-  .profile-pic {
-    float: none; /* Removes floating on small screens */
-    margin: 0 auto 20px; /* Centers the image and adds spacing below */
-  }
+/* Align the profile section to the top */
+.col-md-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align to the top */
+  align-items: center; /* Center the content horizontally */
 }
