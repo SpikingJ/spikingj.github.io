@@ -3,17 +3,16 @@ layout: default
 ---
 <div class="about-page">
     <div class="container mt-5">
-        <div class="row align-items-start">
+        <div class="row align-items-center">
             <!-- Left Column -->
             <div class="col-md-4 text-center">
-                <img src="{{ site.baseurl }}/assets/img/JCC.JPG" alt="Profile Picture" class="img-fluid rounded-circle profile-pic">
+                <img src="{{ site.baseurl }}/assets/img/JCC.JPG" alt="Profile Picture" class="img-fluid rounded-circle profile-pic mb-3">
                 <h2>{{ site.first_name }} {{ site.last_name }}</h2>
-                <p>{{ page.subtitle }}</p>
-                <p>
+                <p class="subtitle">{{ page.subtitle }}</p>
+                <p class="text-muted">
                     <i class="fas fa-map-marker-alt"></i> London, UK <br>
                     <i class="fas fa-briefcase"></i> King's College London <br>
-                    <i class="fas fa-graduation-cap"></i>
-                    <a href="https://scholar.google.com">Google Scholar</a>
+                    <i class="fas fa-graduation-cap"></i> <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
                 </p>
             </div>
 
@@ -30,13 +29,9 @@ layout: default
                     {% if page.selected_papers %}
                       <h2>Selected Publications</h2>
                       {% include selected_papers.liquid %}
-                      <p>
-                        <center>
-                          <div id="clustrmaps-widget" style="width:100px">
-                            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=6S1_klH-6jQahJbFleG831JfFePX1Gl-D1JUcSLZYOE"></script>
-                          </div>
-                        </center>
-                      </p>
+                      <div class="clustrmaps-widget text-center mt-4">
+                          <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=6S1_klH-6jQahJbFleG831JfFePX1Gl-D1JUcSLZYOE"></script>
+                      </div>
                     {% endif %}
                 </article>
             </div>
