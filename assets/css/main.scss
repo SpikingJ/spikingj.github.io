@@ -15,104 +15,93 @@
   "font-awesome/regular",
   "tabler-icons/tabler-icons.scss",
   "tabler-icons/tabler-icons-filled.scss",
-  "tabler-icons/tabler-icons-outline.scss"
-;
+  "tabler-icons/tabler-icons-outline.scss";
+
+/* Global Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #4a4a4a;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  color: #333;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 .container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
 }
 
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f9f9f9;
-  padding: 20px;
-}
-
-/* Header Navigation */
-header {
-  background: #333;
-  color: #fff;
-  padding: 10px 20px;
-}
-
-header ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-}
-
-header ul li {
-  margin: 0 10px;
-}
-
-header ul li a {
-  color: #fff;
-  text-decoration: none;
+/* Profile Picture */
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* About Section */
-.about {
-  text-align: center;
-  margin-top: 20px;
+.about-page h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #222;
 }
 
-.about img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  margin-bottom: 10px;
+.about-page .subtitle {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 15px;
 }
 
-.about h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+/* Post Content */
+.post-header h2 {
+    font-size: 1.8rem;
+    color: #222;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    margin-bottom: 15px;
 }
 
-.about p {
-  margin: 5px 0;
+.post-content p {
+    margin-bottom: 15px;
+    line-height: 1.8;
 }
 
-/* Section Titles */
-h2 {
-  margin: 20px 0 10px;
-  font-size: 1.5rem;
+/* Publications Section */
+.clustrmaps-widget {
+    margin-top: 20px;
 }
 
-/* Research Interests */
-.interests ul {
-  list-style: disc;
-  padding-left: 40px;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
 
-.interests li {
-  margin-bottom: 5px;
-}
+    .about-page h2 {
+        font-size: 1.5rem;
+    }
 
-/* News Section */
-.news ul {
-  list-style: none;
-}
+    .post-header h2 {
+        font-size: 1.5rem;
+    }
 
-.news li {
-  margin-bottom: 10px;
-}
-
-.news a {
-  color: #007BFF;
-  text-decoration: none;
-}
-
-.news a:hover {
-  text-decoration: underline;
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
 }
