@@ -26,26 +26,24 @@ $max-content-width: {{ site.max_width }};
 
 .row {
   display: flex;
-  align-items: flex-start; /* Align profile and text sections to the top */
-  gap: 20px; /* Add space between the two columns */
+  align-items: flex-start; /* Align all child elements (profile and text) to the top */
+  gap: 20px; /* Space between profile section and about section */
 }
 
-
-/* Profile Picture Section */
+/* Profile Section: Stays on the Left and Aligns to the Top */
 .profile-section {
   display: flex;
-  flex-direction: column; /* Stack the photo and name vertically */
-  align-items: center; /* Center align the content (photo and name) */
-  text-align: center; /* Center text alignment for the name and details */
+  flex-direction: column; /* Stack photo and details vertically */
+  align-items: flex-start; /* Align content to the left */
+  text-align: left; /* Align text under the photo to the left */
 }
 
-
+/* Profile Picture */
 .profile-pic {
-  width: 120px; /* Set smaller width */
-  height: 120px; /* Match height for a circle */
-  border-radius: 50%; /* Makes the image circular */
-  object-fit: cover; /* Ensures the image fits well in the circle */
-  margin-bottom: 10px; /* Adds space between the photo and the name */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Crop the image within the circle */
+  margin-bottom: 10px; /* Space between the photo and name */
 }
-
 
