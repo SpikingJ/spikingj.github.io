@@ -24,17 +24,12 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-outline.scss"
 ;
 
-.row {
-  display: flex;
-  align-items: flex-start; /* Align all child elements (profile and text) to the top */
-  gap: 20px; /* Space between profile section and about section */
-}
 
 /* Profile Section: Stays on the Left and Aligns to the Top */
 .profile-section {
   display: flex;
   flex-direction: column; /* Stack photo and details vertically */
-  align-items: flex-start; /* Align content to the left */
+  align-items: center; /* Align content to the left */
   text-align: left; /* Align text under the photo to the left */
 }
 
