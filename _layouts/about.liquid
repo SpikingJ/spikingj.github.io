@@ -2,18 +2,20 @@
 layout: default
 ---
 <div class="about-page">
-  <div class="container">
-    <div class="col-md-4 profile-section">
-      <!-- Left Column -->
-        <img src="{{ site.baseurl }}/assets/img/JCC.JPG" alt="Profile Picture" class="profile-pic">
-        <h2>{{ site.first_name }} {{ site.last_name }}</h2>
-        <p class="subtitle">{{ page.subtitle }}</p>
-        <p>
-          <i class="fas fa-map-marker-alt"></i> London, UK <br>
-          <i class="fas fa-briefcase"></i> King's College London <br>
-          <i class="fas fa-graduation-cap"></i> <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
-        </p>
-      </div>
+    <div class="container mt-5">
+        <div class="row align-items-start">
+            <!-- Left Column -->
+            <div class="col-md-4 text-center">
+                <img src="{{ site.baseurl }}/assets/img/JCC.JPG" alt="Profile Picture" class="img-fluid rounded-circle profile-pic">
+                <h2>{{ site.first_name }} {{ site.last_name }}</h2>
+                <p>{{ page.subtitle }}</p>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i> London, UK <br>
+                    <i class="fas fa-briefcase"></i> King's College London <br>
+                    <i class="fas fa-graduation-cap"></i>
+                    <a href="https://scholar.google.com">Google Scholar</a>
+                </p>
+            </div>
 
             <!-- Right Column -->
             <div class="col-md-8">
