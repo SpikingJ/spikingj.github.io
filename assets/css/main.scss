@@ -33,7 +33,6 @@ $max-content-width: {{ site.max_width }};
 }
 
 
-
 .profile-pic {
   width: 120px; /* Set smaller width */
   height: 120px; /* Match height for a circle */
@@ -43,11 +42,3 @@ $max-content-width: {{ site.max_width }};
 }
 
 
-
-/* Align the profile section to the top */
-.col-md-4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Align to the top */
-  align-items: center; /* Center the content horizontally */
-}
