@@ -17,10 +17,11 @@ Jiechen Chen is currently a research associate with King’s Communications, Lea
 
 Prior to that, he obtained his PhD degree in information engineering at King's College London, supervised by Prof. Osvaldo Simeone. 
 
-His research interests focus on neuromorphic computing and its applications in energy-efficient wireless communications. If you are interested in above research topics, please feel free to reach out.
+His research interests focus on neuroscience-inspired computing and its applications in energy-efficient wireless communications, particularly in edge-based Internet-of-Things (IoT) scenarios. If you are interested in these research topics, please feel free to reach out.
 
 
 ### Academic Activities
+- Technical Committee Member, IEEE 26th International Workshop on Signal Processing and Artificial Intelligence in Wireless Communications (SPAWC), 2025
 - Technical Program Committee (TPC) Member, IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN), 2025
 - TPC Member,  IEEE/CIC International Conference on Communications in China (ICCC), 2024
 - TPC Member,  IEEE Vehicular Technology Conference (VTC), 2024 Spring
